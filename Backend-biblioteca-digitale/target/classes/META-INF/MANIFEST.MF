@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Built-By: martinag
+Build-Jdk: 11.0.15
+Implementation-Title: spring-boot-crud-operation
+Implementation-Version: 0.0.1-SNAPSHOT
+Implementation-Vendor-Id: com.gabriele
+Implementation-URL: https://spring.io/projects/spring-boot/spring-boot-c
+ rud-operation
+Created-By: Maven Integration for Eclipse
+

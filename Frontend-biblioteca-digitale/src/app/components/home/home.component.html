@@ -1,0 +1,24 @@
+<div class="container mt-2">
+    <h2>Benvenuti nella Biblioteca Digitale</h2>
+    <img src="test.jpg" alt="biblioteca babilonese" style="width:500px;height:600px;">
+    
+    <p>
+        L'imminente favorita collezione di libri al mondo;
+        <br>
+        In continuo accrescimento, con la missione di dare libero accesso intellettuale ad una fonte inesaruribile di Opere.
+         </p>
+    <div class="row" >
+        <div class="col-sm mt-5" *ngFor="let item of books; let id = index;">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h2 class="card-title">{{item.author}}</h2>
+                    <p style="font-size: 10px; font-weight: bold; ">{{item.datePublished}} </p>
+                    <p class="card-text">{{item.description}}</p>
+                    <span style="text-align: center; font-size: 2rem;">{{item.bookname}}</span>
+                </div>
+            </div>
+        </div>
+        
+       
+    </div>
+</div>
