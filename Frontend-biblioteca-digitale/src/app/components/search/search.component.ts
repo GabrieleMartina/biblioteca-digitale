@@ -10,14 +10,14 @@ import { BookService } from 'src/app/services/book.service';
 })
 export class SearchComponent implements OnInit {
 
-  searchText: String = "";
+  searchText: string = "";
   books: BookModel | undefined;
   constructor(private bookService: BookService) { }
 
   ngOnInit(): void {
   }
   submitForm(data: any) {
-    this.bookService.getBookByBookname(this.searchText).subscribe(
+    this.bookService.getSingleBookByBookname(this.searchText).subscribe(
       (data: any) => {
         this.books = data
         console.log(data)

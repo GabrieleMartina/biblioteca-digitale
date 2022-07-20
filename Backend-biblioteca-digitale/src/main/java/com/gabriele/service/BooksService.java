@@ -21,19 +21,19 @@ public class BooksService
 		return books;
 	}
 
-	
 
-	public List<Books> getBooksByBookname(String Bookname) 
+
+	public Books getBooksByBookname(String Bookname) 
 	{
 		return booksRepository.findByBookname(Bookname);
 	}
 
-	
+
 	/*prende uno specifico record usando un il metodo findbyid
 		public Books getBooksBybookname(String bookname) 
 		{
 			List<Books> books = new ArrayList<>();
-			
+
 			Books booksFilter = books.stream()
 					  .filter(value -> bookname.equals(value.getBookname()))
 					  .findAny()
@@ -42,15 +42,17 @@ public class BooksService
 			System.out.println("booksFilterbooksFilterbooksFilterbooksFilterbooksFilterbooksFilterbooksFilterbooksFilterbooksFilter"+booksFilter);
 			return booksRepository.findBybookname(booksFilter).get();
 		}
-		
-		public Books getBooksById(int id) 
+
+
+
+	public Books getBooksById(int id) 
 	{
 		return booksRepository.findById(id).get();
-	}*/
+	}
 
-	
-	
-	
+	 */
+
+
 	//salva uno specifico record attraverso il metodod save
 	public void saveOrUpdate(Books books) 
 	{

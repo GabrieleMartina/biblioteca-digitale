@@ -28,15 +28,15 @@ public class BooksController
 		return booksService.getAllBooks();
 	}
 	
-	@GetMapping("/getasinglebookByName/{bookname}")
-	private List<Books> getBooks(@PathVariable("bookname") String bookname) 
+	@GetMapping("/getasinglebookbybookname/{bookname}")
+	private Books getBooks(@PathVariable("bookname") String bookname) 
 	{
 		return booksService.getBooksByBookname(bookname);
 		
 	}
 	//creo un GetMapping che recupera i dettagli di uno specifico libro
-	/*
-	 * @GetMapping("/getasinglebookById/{bookid}")
+	
+	/*  @GetMapping("/getasinglebookById/{bookid}")
 	private Books getBooks(@PathVariable("bookid") int bookid) 
 	{
 		return booksService.getBooksById(bookid);

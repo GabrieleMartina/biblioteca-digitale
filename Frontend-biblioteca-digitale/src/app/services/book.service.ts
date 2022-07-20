@@ -16,9 +16,9 @@ export class BookService {
 
  
 
-  getBookByBookname(bookname: String) {
+  getSingleBookByBookname(bookname: String) {
     console.log(bookname)
-    return this.http.get(`http://localhost:8080/getasinglebookByBookname/${bookname}`)
+    return this.http.get(`http://localhost:8080/getasinglebookbybookname/${bookname}`)
   }
 }
 

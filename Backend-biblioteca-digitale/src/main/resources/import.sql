@@ -1,7 +1,5 @@
 INSERT INTO Books(author,bookname,published,description)VALUES ('J.D. Salinger',  'Il giovane Holden', '16 July, 1951', 'In questo libro il protagonista racconta di un particolare periodo della sua vita adolescenziale, precisamente dopo essersi fatto espellere dalla sua terza scuola consecutiva, quando decide di tornare a New York ma senza incontrare per alcuni giorni i suoi genitori');
 INSERT INTO Books(author,bookname,published,description)VALUES ('Isac Asimov',  'Fondazione', '03 May, 1942', 'La fondazione è ambientata nel futuro, quando il mondo viene a malapena ricordato e gli umani hanno colonizzato la galassia. Il libro introduce ad Hari Seldon: un brillante visionario e psicostorico il quale attraverso la matematica profetizzerà il futuro');
 INSERT INTO Books(author,bookname,published,description)VALUES ('George Orwell',  '1984', '08 June, 1949', 'Un uomo cerca la speranza in mezzo a una distopica società totalitaria e repressiva che non può né comprendere né tollerare. ');
-
-  
-
-    
+INSERT INTO Books(author,bookname,published,description)VALUES ('Pierpaolo Pasolini',  'Poesia in forma di rosa ', '03 June, 1964', '«Pasolini racconta punto per punto i progressi del pensiero e del suo umore» in quegli anni. Si alternano così diversi registri e forme espressive, immagini ora immobili ora febbrili, sequenze fredde e ironiche: «è la forma diaristica del libro quella che fa sì che le contraddizioni vengano rese estreme, mai conciliate, mai smussate, se non alla fine del libro».');
+INSERT INTO Books(author,bookname,published,description)VALUES ('Giuseppe Ungaretti', 'Mattina', '26 January, 1917', 'Un inno alla vita scritto al fronte in trincea durante la prima guerra mondiale');    
