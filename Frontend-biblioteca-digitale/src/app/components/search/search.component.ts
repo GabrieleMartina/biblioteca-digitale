@@ -10,7 +10,7 @@ import { BookService } from 'src/app/services/book.service';
 })
 export class SearchComponent implements OnInit {
 
-  searchText: string = "";
+  searchText: String = "";
   books: BookModel | undefined;
   constructor(private bookService: BookService) { }
 

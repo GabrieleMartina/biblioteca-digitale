@@ -8,6 +8,8 @@ import { FormsModule } from '@angular/forms';
 import { HeaderComponent } from './components/header/header.component';
 import { SearchComponent } from './components/search/search.component';
 import { HomeComponent } from './components/home/home.component';
+import { InsertBooksFormComponent } from './components/insert-books-form/insert-books-form.component';
+
 
 
 @NgModule({
@@ -15,7 +17,9 @@ import { HomeComponent } from './components/home/home.component';
     AppComponent,
     HeaderComponent,
     SearchComponent,
-    HomeComponent
+    HomeComponent,
+    InsertBooksFormComponent,
+
   ],
   imports: [
     BrowserModule,
