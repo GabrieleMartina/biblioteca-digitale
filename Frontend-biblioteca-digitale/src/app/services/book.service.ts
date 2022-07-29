@@ -1,6 +1,7 @@
+import { BookModel } from './../models/book.model';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { BookModel } from '../models/book.model';
+import { Observable } from 'rxjs';
 
 
 
@@ -18,7 +19,13 @@ export class BookService {
 
   getSingleBookByBookname(bookname: String) {
     console.log(bookname)
-    return this.http.get(`http://localhost:8080/getasinglebookbybookname/${bookname}`)
+    return this.http.get("http://localhost:8080/getasinglebookbybookname/${bookname}")
+  }
+
+  saveSingleBookByBookname(bookModel : BookModel): Observable<any> {
+    const url = "http://localhost:8080/saveasinglebookbybookname";
+    console.log(bookModel);
+    return this.http.post<any>(url, bookModel);
   }
 }
 
