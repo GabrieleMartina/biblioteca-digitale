@@ -5,7 +5,11 @@
         L'imminente favorita collezione di libri al mondo;
         <br>
         In continuo accrescimento, con la missione di dare libero accesso intellettuale ad una fonte inesaruribile di Opere.
-         </p>
+        
+    </p>
+    
+         <div><app-search></app-search></div>
+
     <div class="row" >
         <div class="col-sm mt-5" *ngFor="let item of books; let id = index;">
             <div class="card" style="width: 18rem;">
@@ -16,8 +20,6 @@
                     <span style="text-align: center; font-size: 2rem;">{{item.bookname}}</span>
                 </div>
             </div>
-        </div>
-        
-       
+        </div>             
     </div>
 </div>
