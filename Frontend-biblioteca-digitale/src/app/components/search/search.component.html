@@ -1,7 +1,7 @@
 <form #form='ngForm' (ngSubmit)='submitForm(form)' class="mt-5">
   <div class="input-group">
       <input type='text'
-      [(ngModel)]="searchText" placeholder='Inserisci il nome del libro' name='searchText' required class="form-control rounded" />
+      [(ngModel)]="searchText" placeholder='Cerca il nome del libro' name='searchText' required class="form-control rounded" />
       <button type="submit" class="btn btn-outline-primary" [disabled]="form.invalid">
           Cerca
         </button>

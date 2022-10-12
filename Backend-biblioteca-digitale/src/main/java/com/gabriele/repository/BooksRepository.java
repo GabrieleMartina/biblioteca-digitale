@@ -3,8 +3,6 @@ package com.gabriele.repository;
 
 
 
-import java.util.List;
-
 import org.springframework.data.repository.CrudRepository;
 import com.gabriele.model.Books;
 
