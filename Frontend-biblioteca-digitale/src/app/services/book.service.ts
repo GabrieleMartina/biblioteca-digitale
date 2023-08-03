@@ -18,8 +18,8 @@ export class BookService {
  
 
   getSingleBookByBookname(bookname: String) {
-    console.log(bookname)
-    return this.http.get("http://localhost:8080/getasinglebookbybookname/${bookname}")
+    console.log('book',bookname)
+    return this.http.get(`http://localhost:8080/getasinglebookbybookname/${bookname}`)
   }
 
   saveSingleBookByBookname(bookModel : BookModel): Observable<any> {

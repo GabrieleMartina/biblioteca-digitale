@@ -23,9 +23,9 @@ public class BooksService
 
 
 
-	public Books getBooksByBookname(String Bookname) 
+	public Books getBooksByBookname(String bookname) 
 	{
-		return booksRepository.findByBookname(Bookname);
+		return booksRepository.findByBookname(bookname);
 	}
 
 

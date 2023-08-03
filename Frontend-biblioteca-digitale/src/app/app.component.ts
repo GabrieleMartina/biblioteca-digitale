@@ -21,19 +21,21 @@ export class AppComponent implements OnInit {
    }
 }
 
-function searchText(this: any, key:  String):void {
+function searchText(books: BookModel[], key: string): BookModel[] {
   const results: BookModel[] = [];
-  for (const books of this.BookModel)
-  {
-    if(books.bookname.toLowerCase().indexOf(key.toLowerCase()) !== -1 ||
-    (books.author.toLowerCase().indexOf(key.toLowerCase()) !== -1 )) {
-  results.push(books);
+  for (const book of books) {
+    if (
+      book.bookname.toLowerCase().indexOf(key.toLowerCase()) !== -1 ||
+      book.author.toLowerCase().indexOf(key.toLowerCase()) !== -1
+    ) {
+      results.push(book);
     }
   }
-
-
-  throw new Error('Function not implemented.');
+  return results;
 }
+
+
+  
 
 function key(key: any, String: StringConstructor) {
   throw new Error('Function not implemented.');
